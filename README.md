@@ -55,3 +55,7 @@ This is a type that represents a web page's `robots.txt` file for easy link bloc
 
 ### is_allowed()
 This is a function that takes a relative path as a string an returns a boolean. The path is formatted as a path from a website's root and the return value represents whether a page is allowed under `robots.txt`. If the bool returned is True, the page is allowed. If it's False, the page is disallowed.
+
+# Quirks
+This is liable to change in the future.
+- Wikipedia is currently blocked. Any crawls directed to Wikipedia are skipped. This is because for whatever reason, Wikipedia doesn't like my User-Agent.
